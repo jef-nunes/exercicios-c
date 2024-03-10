@@ -2,7 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include <locale.h>
 
 float nota_I = -1;
 float nota_II = -1;
@@ -19,7 +18,7 @@ float resultado;
     printf(" \n \n \n [Digite algo para realizar outro calculo. Para encerrar este programa digite 'Ctrl+C']\n \n");
     fflush(stdin);
     scanf("%s",&enter);
-    if(enter=="12321321321321312321312312321312"){
+    if(strcmp(enter,"?")==0){
     printf("Erro");
     }else{
     prologo();
