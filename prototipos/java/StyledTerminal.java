@@ -2,9 +2,9 @@ package tools;
 public class StyledTerminal{
     public static void clearLogs() {
         String os = System.getProperty("os.name").toLowerCase();
-        boolean isWindows = os.contains("win");
+        boolean windows = os.contains("win");
 
-        if (isWindows) {
+        if (windows) {
             try {
                 new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
             } catch (Exception e) {
