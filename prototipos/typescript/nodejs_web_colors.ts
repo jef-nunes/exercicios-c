@@ -1,4 +1,4 @@
-// HTML / Web colors em Node JS (TypeScript)
+// Cores padrão HTML / Web em Node JS (TypeScript)
 class WebColors {
     private static id = 1;
     public static colors: any[] = [];
