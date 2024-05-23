@@ -28,7 +28,7 @@
         "editorLineNumber.foreground": "#2c393f",
         "editorLineNumber.activeForeground": "#0de3ff",
         "editorGutter.background": "#000000",
-        "sideBar.background": "#555555",
+        "sideBar.background": "#555554",
         "sideBar.dropBackground": "#646464"
     },
     
