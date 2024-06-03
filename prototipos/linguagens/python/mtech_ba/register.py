@@ -43,11 +43,11 @@ class Register:
 
 
 Editor.clearArchive("accounts.json")
-Register.createAccount("Abc","abc@python.com","abc123")
-Register.createAccount("Def","def@python.com","def123")
-Register.createAccount("Ghi","ghi@python.com","ghi123")
-Register.createAccount("Jkl","jkl@python.com","jkl123")
-Register.createAccount("Mno","mno@python.com","mno123")
+#Register.createAccount("Abc","abc@python.com","abc123")
+#Register.createAccount("Def","def@python.com","def123")
+#Register.createAccount("Ghi","ghi@python.com","ghi123")
+#Register.createAccount("Jkl","jkl@python.com","jkl123")
+#Register.createAccount("Mno","mno@python.com","mno123")
 #parse1 = Editor.parseJSON("accounts.json") 
 #viewAccount2 =  parse1[1]
 #print("parse 1")
