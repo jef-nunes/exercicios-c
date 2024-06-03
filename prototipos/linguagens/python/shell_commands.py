@@ -15,7 +15,7 @@ Aqua = "\033[96m"
 White = "\033[97m"
 DarkRed = "\033[31m"
 
-class _Bash_:
+class _Unix_:
 
     @static
     def pwd()->void:
@@ -25,7 +25,7 @@ class _Bash_:
 
     @static
     def ls(target: str = "?")->void:
-        _Bash_.pwd()
+        _Unix_.pwd()
         command: List[str]=["ls"]     
         if target != "?":
             command.append(target)
@@ -91,7 +91,7 @@ class _SetColor_:
 
 class Shell:
     set_color = _SetColor_()
-    bash = _Bash_()
+    unix = _Unix_()
     @static
     def clear_logs()->void:
         system("cls || clear")
@@ -108,18 +108,17 @@ class Shell:
         return process
 
 def main()->void:
+    x: str = platform.system()
     # debug
-    if platform.system() == "Linux":
+    if x == "Linux" or x == "Darwin":
         Shell.clear_logs()
         Shell.set_color.green()
-        Shell.bash.localhost_details()
-        Shell.bash.pwd()
-        Shell.bash.ls()
-        Shell.bash.ls("../")
+        Shell.unix.localhost_details()
+        Shell.unix.pwd()
+        Shell.unix.ls()
+        Shell.unix.ls("../")
         Shell.set_color.green()
-    elif platform.system() == "Windows":
-        pass
-    elif platform.system() == "Darwin":
+    else:
         pass
 
 if __name__ == "__main__":
