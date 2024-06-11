@@ -184,8 +184,6 @@ class WebColors {
     }
 }
   
-  // Tools for working on arrays
-  // (also distributed on module array_tools.ts)
   function stringToObject(arr: string[]) {
     let _arr: any[] = [];
     arr.forEach((element) => {
