@@ -8,15 +8,4 @@ hosting() {
     echo -e "\nPortas abertas:\n"
     netstat -tuln | grep LISTEN | awk '{print $4}'
 }
-alias myhost='hosting'
-alias myHost='hosting'
 alias meuhost='hosting'
-alias meuHost='hosting'
-alias meuip='hosting'
-alias meuIP='hosting'
-alias myip='hosting'
-alias myIP='hosting'
-alias sobrehost='hosting'
-alias sobreHost='hosting'
-alias abouthost='hosting'
-alias aboutHost='hosting'
